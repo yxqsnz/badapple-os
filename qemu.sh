@@ -11,4 +11,4 @@ mkdir -p vm/EFI/Boot/
 mv ${EFI_PATH} vm/EFI/Boot/Bootx64.efi
 
 echo "@= Running QEMU"
-qemu-system-x86_64 -drive format=raw,file=fat:rw:vm/ -machine q35 -no-reboot -enable-kvm -bios /usr/share/ovmf/x64/OVMF_CODE.fd
+qemu-system-x86_64 -drive format=raw,file=fat:rw:vm/ -machine q35 -no-reboot -enable-kvm -bios /usr/share/OVMF/OVMF_CODE.fd
